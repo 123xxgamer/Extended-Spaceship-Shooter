@@ -63,7 +63,7 @@ to setup
   ;; __clear-all-and-reset-ticks should be replaced with clear-all at
   ;; the beginning of your setup procedure and reset-ticks at the end
   ;; of the procedure.)
-  __clear-all-and-reset-ticks
+  clear-all
 create-raidens 1
 ask turtles [set missile-countdown 5]
 ask raidens
@@ -80,6 +80,7 @@ ask raidens
   set lvl-countdown 102
   set invincible? false
   set over? false]
+  reset-ticks
 end
 
 to go-left
